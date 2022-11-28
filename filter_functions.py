@@ -123,7 +123,9 @@ def final_list_of_items_with_only_usa_location(titles,prices,urls,sold_dates,shi
 
 def vero_forbidden_words_function(title, vero_word):
     directory = os.getcwd()
-    vero_file_location= directory+"\VERO.txt"
+    #vero_file_location= directory+"\VERO.txt"
+    #for linux
+    vero_file_location= directory+"/VERO.txt"
 
     forbidden_words=[]
     with open(vero_file_location, encoding='utf8') as f:
